@@ -19,7 +19,7 @@ app.get('/app/rps/', (req, res) => {
     res.status(200).send(rps());
 });
 
-app.get('/app/rpsls', (req, res) => {
+app.get('/app/rpsls/', (req, res) => {
 	res.status(200).send(rpsls());
 });
 
