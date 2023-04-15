@@ -22,3 +22,8 @@ app.get('app/rps', (req, res) => {
 app.get('/app/rpsls', (req, res) => {
 	res.status(200).send(rpsls());
 });
+
+//query
+app.get('/app/rps/play', (req, res) => {
+	res.status(200).send(rps(req.query.shot));
+});
