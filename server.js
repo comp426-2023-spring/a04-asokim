@@ -51,7 +51,7 @@ app.get('/app/rpsls/play/:shot', (req, res) => {
 });
 
 //404
-app.get('*', (res, res) => {
+app.get('*', (req, res) => {
 	res.status(404).send('404 NOT FOUND');
 });
 
