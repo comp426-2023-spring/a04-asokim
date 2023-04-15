@@ -9,6 +9,7 @@ const port = args["port"] || 5000;
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.get('/app', (req, res) => {
     res.status(200).send("200 OK");
