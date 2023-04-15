@@ -24,16 +24,16 @@ app.get('/app/rpsls/', (req, res) => {
 });
 
 //query
-app.get('/app/rps/play', (req, res) => {
+app.get('/app/rps/play/', (req, res) => {
 	res.status(200).send(rps(req.query.shot));
 });
 
-app.get('/app/rpsls/play', (req, res) => {
+app.get('/app/rpsls/play/', (req, res) => {
 	res.status(200).send(rpsls(req.query.shot));
 });
 
 //json requests
-app.post('/app/rps/play/', (req, res) => {
+app.post('/app/rps/play//', (req, res) => {
 	res.status(200).send(rps(req.body.shot));
 });
 
