@@ -2,7 +2,7 @@
   "name": "a04-asokim",
   "version": "1.0.0",
   "description": "Stand up an API",
-  "main": "server.je",
+  "main": "server.js",
   "scripts": {
     "test": "node server.js --port=5555"
   },
